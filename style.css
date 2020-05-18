@@ -1,0 +1,124 @@
+/*
+Theme Name: Paradoujin Theme
+Theme URI: 
+Description: 
+Version: 0.1
+Author: Balraj Johal
+Author URI: balraj.cool
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.header-nav {
+  height: 62px;
+  background-color: black;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  z-index: 0;
+  position: relative;
+}
+.header-nav-bg-wrapper {    
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.header-nav img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+.site-title {    
+  font-size: 32px;
+  padding: 13px 13px 10px 20px;
+  width: 315px;
+  margin: 0;
+}
+.site-title a {
+  color: white;
+}
+.site-title a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* 
+.menu-primary-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px 13px;
+} */
+.menu-primary-container ul li {
+  float: left;
+  list-style: none;
+}
+.page_item, .menu-item {
+  padding: 18px 7px;
+}
+.page_item a, .menu-item a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+}
+.page_item a:hover, .menu-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* UNDER SM */
+@media (max-width: 576px) {
+  .bg-dark-on-collapse {
+    background-color: #111112;
+    border-radius: 3px;
+  }
+}
+@media (min-width: 576px) {
+  .navbar-override {
+    padding: 0;
+    margin: 0 13px;
+    padding: 0 !important;
+  }
+}
+/* SM */
+@media (min-width: 576px) and (max-width: 768px) {
+  .page_item, .menu-item {
+    padding: 18px 7px;
+  }
+  .page_item a, .menu-item a {
+    font-size: 18px;
+  }
+}
+/* OVER UP */
+@media (min-width: 768px) {
+  .site-title {    
+    font-size: 48px;
+    padding: 13px 13px 10px 27px;
+  }
+  .header-nav {
+    height: 80px;
+  }
+  .page_item a, .menu-item a {
+    font-size: 22px;
+  }
+  .page_item, .menu-item {
+    padding: 23px 15px;
+  }
+}
+
+.navbar-override {
+  position: static;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px 0px;
+  padding: 11px 16px;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-toggler:focus {
+  outline: 0px dotted;
+}
