@@ -24,29 +24,47 @@
 </div>
 
 <div class="content">
-  <?php
-    $queryLatestFeatured = new WP_Query( array(
-      'category_name' => 'track',
-      'posts_per_page' => 1,
-    )); 
-  ?>
-  <?php if ( $queryLatestFeatured->have_posts() ) : ?>
-    <div class="featured container">
-      <?php while ( $queryLatestFeatured->have_posts() ) : $queryLatestFeatured->the_post(); ?>
-        <?php the_title(); ?>
-        <?php 
-          $image = get_field('artist_info');
-          $size = 'full'; // (thumbnail, medium, large, full or custom size)
-          if( $image ) {
-              echo wp_get_attachment_image( $image, $size );
-          }
+
+  <div class="your-class">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="featured col-9">
+        <?php
+          $queryLatestFeatured = new WP_Query( array(
+            'category_name' => 'featured',
+            'posts_per_page' => 1,
+          )); 
         ?>
-      <?php endwhile; ?>
-      <?php wp_reset_postdata(); ?>
+        <?php while ( $queryLatestFeatured->have_posts() ) : $queryLatestFeatured->the_post(); ?>
+          <h1 class="title">
+            <?php the_title(); ?>
+          </h1>
+          <div class="img-wrapper">
+            <?php 
+              $image = get_field('artist_photo');
+              $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+              if( $image ) {
+                  echo wp_get_attachment_image( $image, $size );
+              } 
+            ?>
+          </div>
+          <?php $video_URL = get_field('video_url') ?>
+          <div class="iframe-container">
+            <iframe src="<?php echo $video_URL ?>" allowfullscreen>
+          </div>
+          </iframe> 
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      </div>
+      <div class="playlists col-3">
+      </div>
     </div>
-  <?php else : ?>
-    <p>No tracks!!</p>
-  <?php endif; ?>
+  </div>
 
   <?php
     $queryLatestTracks = new WP_Query( array(

@@ -10,6 +10,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+h1 {
+  font-family: 'Share Tech', monospace;
+}
 .header-nav {
   height: 62px;
   background-color: black;
@@ -142,4 +145,41 @@ body {
 .track-card-img-wrap img {
   width: 100%;
   height: auto;
+}
+
+
+.featured, .playlists {
+  border: red 1px solid;
+}
+.featured .img-wrapper {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.featured .img-wrapper img {
+  height: auto;
+  width: 100%;
+}
+.featured .title {
+  position: relative;
+  left: 31%;
+  top: 15px;
+  width: 69%;
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  margin: 10% 0 0 20%;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
