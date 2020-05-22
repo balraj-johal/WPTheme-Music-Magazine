@@ -24,16 +24,15 @@
 </div>
 
 <div class="content">
-
-  <div class="your-class">
+  <!-- <div class="your-class">
     <div>your content</div>
     <div>your content</div>
     <div>your content</div>
-  </div>
+  </div> -->
 
   <div class="container">
     <div class="row">
-      <div class="featured col-9">
+      <div class="featured col-lg-8 col-12">
         <?php
           $queryLatestFeatured = new WP_Query( array(
             'category_name' => 'featured',
@@ -41,6 +40,9 @@
           )); 
         ?>
         <?php while ( $queryLatestFeatured->have_posts() ) : $queryLatestFeatured->the_post(); ?>
+          <h1 class="block-title">
+            FEATURED TRACK
+          </h1>
           <h1 class="title">
             <?php the_title(); ?>
           </h1>
@@ -55,13 +57,23 @@
           </div>
           <?php $video_URL = get_field('video_url') ?>
           <div class="iframe-container">
-            <iframe src="<?php echo $video_URL ?>" allowfullscreen>
+            <iframe src="<?php echo $video_URL ?>" allowfullscreen></iframe>
           </div>
-          </iframe> 
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
       </div>
-      <div class="playlists col-3">
+      <div class="playlists col-lg-4 col-12">
+        <div class="title-group">
+          <h1 class="block-title">
+            PLAYLISTS
+          </h1>
+          <h1 class="title">
+            Best underground selections
+          </h1>
+        </div>
+        <div class="iframe-container">
+          <iframe src="https://open.spotify.com/embed/playlist/1a2lGzQxf5AdipnKmPpb9I" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -76,6 +88,9 @@
     <div class="latest-tracks">
       <div class="bg"></div>
       <div class="container">
+        <h1 class="block-title">
+          NEW MUSIC
+        </h1>
         <div class="row">
           <?php while ( $queryLatestTracks->have_posts() ) : $queryLatestTracks->the_post(); ?>
             <div class="col-12 col-lg-4">
@@ -96,6 +111,9 @@
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
         </div>
+        <h1 class="block-title">
+          SEE MORE >
+        </h1>
       </div>
     </div>
   <?php else : ?>

@@ -13,6 +13,9 @@ body {
 h1 {
   font-family: 'Share Tech', monospace;
 }
+.block-title {
+  font-family: 'Share Tech', monospace;
+}
 .header-nav {
   height: 62px;
   background-color: black;
@@ -136,6 +139,15 @@ h1 {
   position: absolute;
   width: 100%;
   background-color: black;
+  z-index: -10;
+}
+.latest-tracks .block-title {
+  padding: 1em 0;
+  color: white;
+  margin: 0 -15px;
+}
+.latest-tracks .block-title:last-of-type {
+  text-align: right;
 }
 .track-card-img-wrap {
   width: 100%;
@@ -148,12 +160,12 @@ h1 {
 }
 
 
-.featured, .playlists {
+/* .featured, .playlists {
   border: red 1px solid;
-}
+} */
 .featured .img-wrapper {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -163,17 +175,30 @@ h1 {
   height: auto;
   width: 100%;
 }
-.featured .title {
+.title, .block-title {
+  font-size: 2rem;
+}
+.featured .block-title, .featured .title {
   position: relative;
-  left: 31%;
-  top: 15px;
+  left: 27%;
   width: 69%;
+}
+.title {
+  font-size: 26px;
+}
+.block-title {
+  margin-bottom: 0;
 }
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
-  margin: 10% 0 0 20%;
+}
+.featured .iframe-container {
+  margin: 0% 0 0 14%;
+}
+.playlists .iframe-container {
+  height: 84%;
 }
 .iframe-container iframe {
   border: 0;
@@ -182,4 +207,112 @@ h1 {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.playlists, .featured {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 576px) {
+  .featured {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .featured .img-wrapper {
+    height: 85px;
+    width: 85px;
+    left: 10px;
+  }
+  .featured .block-title, .featured .title {
+    left: 30%;
+  }
+  .playlists {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .title, .block-title {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .featured {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .featured .img-wrapper {
+    height: 125px;
+    width: 125px;
+  }
+  .featured .block-title, .featured .title {
+    left: 24%;
+  }
+  .playlists {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .title, .block-title {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 19px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .featured {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .featured .img-wrapper {
+    height: 150px;
+    width: 150px;
+  }
+  .featured .block-title, .featured .title {
+    left: 24%;
+  }
+  .playlists {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .title, .block-title {
+    font-size: 1.75rem;
+  }
+  .title {
+    font-size: 23px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .title, .block-title {
+    font-size: 1.75rem;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .featured .img-wrapper {
+    height: 150px;
+    width: 150px;
+  }
+  .featured .block-title, .featured .title {
+    left: 24%;
+  }
+  .playlists .iframe-container {
+    height: 83%;
+  }
+}
+/* CUST BP XL XLG */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1300px !important;
+  }
+
+
+  .featured .block-title, .featured .title {
+    left: 24%;
+  }
+  .playlists .iframe-container {
+    height: 86%;
+}
 }
