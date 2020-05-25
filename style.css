@@ -9,6 +9,7 @@ Author URI: balraj.cool
 
 @import "css/header.css";
 @import "css/front-page.css";
+@import "css/internal-page.css";
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -23,4 +24,28 @@ h2 {
 }
 .block-title, .titles {
   font-family: 'Share Tech', monospace;
+}
+.fix-a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+.fix-a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.iframe-container, .wp-block-embed.is-type-video .wp-block-embed__wrapper {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe, .wp-block-embed.is-type-video .wp-block-embed__wrapper iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

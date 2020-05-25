@@ -58,95 +58,9 @@
     </div>
   </div>
 
-  <?php
-    $queryLatestTracks = new WP_Query( array(
-      'category_name' => 'track',
-      'posts_per_page' => 3,
-    )); 
-  ?>
-  <?php if ( $queryLatestTracks->have_posts() ) : ?>
-    <div class="latest-tracks">
-      <div class="bg"></div>
-      <div class="container">
-        <h1 class="block-title">
-          NEW MUSIC
-        </h1>
-        <div class="row">
-          <?php while ( $queryLatestTracks->have_posts() ) : $queryLatestTracks->the_post(); ?>
-            <div class="col-12 col-lg-4">
-              <div class="card track-card">
-                <div class="track-card-img-wrap">
-                  <?php 
-                    $image = get_field('artist_info');
-                    $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                    if( $image ) {
-                        echo wp_get_attachment_image( $image, $size );
-                    }
-                  ?>
-                </div>
-                <h2 class="titles">
-                  <?php the_field('track_name'); ?> - 
-                  <?php the_field('artist'); ?>
-                </h2>
-                <div class="excerpt">
-                  <?php the_excerpt(); ?>
-                </div>
-              </div>
-            </div>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-        </div>
-        <h1 class="block-title">
-          SEE MORE >
-        </h1>
-      </div>
-    </div>
-  <?php else : ?>
-    <p>No tracks!!</p>
-  <?php endif; ?>
+  <?php get_template_part('latest-tracks'); ?>
+  <?php get_template_part('latest-articles'); ?>
 
-  <?php
-    $queryLatestArticles = new WP_Query( array(
-      'category_name' => 'article',
-      'posts_per_page' => 8,
-    )); 
-  ?>
-  <?php if ( $queryLatestArticles->have_posts() ) : ?>
-    <div class="articles container">
-      <h1 class="block-title">
-        ARTICLES
-      </h1>
-      <div class="row">
-        <?php while ( $queryLatestArticles->have_posts() ) : $queryLatestArticles->the_post(); ?>
-          <div class="col-12 col-lg-6">
-            <div class="card article-card">
-              <div class="article-card-img-wrap">
-                <?php 
-                  $image = get_field('artist_info'); // TODO change to correct field
-                  $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                  if( $image ) {
-                      echo wp_get_attachment_image( $image, $size );
-                  }
-                ?>
-              </div>
-              <h2 class="titles">
-                <?php the_title(); ?>
-              </h2>
-              <div class="excerpt">
-                <?php the_excerpt(); ?>
-              </div>
-            </div>
-          </div>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-      </div>
-      <h1 class="block-title">
-        SEE MORE >
-      </h1>
-    </div>
-  <?php else : ?>
-    <p>No articl;es!!</p>
-  <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
