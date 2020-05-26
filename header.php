@@ -30,7 +30,7 @@
 
 <div class="header-nav">
   <div class="header-nav-bg-wrapper">
-    <img src="<?php echo get_bloginfo('template_url') ?>/resources/images/static.gif"/>
+    <img class="no-dragging-dickhead" src="<?php echo get_bloginfo('template_url') ?>/resources/images/static.gif" draggable="false"/>
   </div>
 
   <h1 class="site-title">
