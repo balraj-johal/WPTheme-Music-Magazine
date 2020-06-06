@@ -9,39 +9,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="featured col-lg-8 col-12">
-        <?php
-          $queryLatestFeatured = new WP_Query( array(
-            'category_name' => 'featured',
-            'posts_per_page' => 1,
-          )); 
-        ?>
-        <?php while ( $queryLatestFeatured->have_posts() ) : $queryLatestFeatured->the_post(); ?>
-          <h1 class="block-title">
-            FEATURED TRACK
-          </h1>
-          <h1 class="title">
-            <?php the_title(); ?>
-          </h1>
-          <div class="img-wrapper">
-            <?php 
-              $image = get_field('artist_photo');
-              $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-              if( $image ) {
-                  echo wp_get_attachment_image( $image, $size );
-              } 
-            ?>
-          </div>
-          <?php $video_URL = get_field('video_url') ?>
-          <div class="iframe-container">
-            <iframe src="<?php echo $video_URL ?>" allowfullscreen></iframe>
-          </div>
-
-          <!-- TODO: add socials under featured -->
-
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-      </div>
+      <?php get_template_part('featured-block'); ?>
       <div class="twitter col-lg-4 col-12">
         <h1 class="block-title">
           FEED

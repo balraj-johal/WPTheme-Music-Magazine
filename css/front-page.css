@@ -190,11 +190,16 @@ Author URI: balraj.cool
   padding: 0;
 }
 
-.timeline-Header , .timeline-Footer {
-  display: none;
+.social-links {
+  margin: 10px;
 }
-.timeline-Widget {
-  background-color: dddddd;
+.social-links a {
+  margin-right: 10px;
+}
+.social-logo {
+  height: 16px;
+  width: 16px;
+  margin-top: -1.5px;
 }
 
 @media (max-width: 576px) {
