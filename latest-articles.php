@@ -39,11 +39,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
     </div>
-    <h1 class="block-title">
+    <h1 class="block-title last">
       SEE MORE >
     </h1>
   </div>

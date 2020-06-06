@@ -1,5 +1,4 @@
 <?php
-
 function bootstrapstarter_enqueue_styles() {
     wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
     $dependencies = array('bootstrap');
@@ -21,8 +20,5 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . 'my-slick.js', array( 'jquery' ));
-wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . 'my-slick.js', array( 'jquery' ));
-
-wp_enqueue_script( 'script', get_template_directory_uri() . '/js/my-carousel.js', array ( 'jquery' ));
+wp_enqueue_script( 'carousel', get_template_directory_uri().'/js/carousel.js', array ( 'jquery' ), true);
 ?>

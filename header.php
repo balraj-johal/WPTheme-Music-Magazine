@@ -17,8 +17,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]--> 
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Share+Tech+Mono&display=swap&family=Share+Tech&display=swap" rel="stylesheet"> 
-      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <link rel="stylesheet" type="text/css" href="css/carousel-style.css"/>
+      <link rel="stylesheet" type="text/css" href="css/carousel-style.css"/>
 
       <title>
           <?php bloginfo('name'); ?>

@@ -11,7 +11,7 @@ Author URI: balraj.cool
   margin-top: 3em;
   margin-bottom: 3em;
   position: relative;
-  padding: 3em 0;
+  padding: 5em 0;
 }
 .latest-tracks .bg {
   height: 100%;
@@ -95,24 +95,47 @@ Author URI: balraj.cool
 .featured .iframe-container {
   margin: 0% 0 0 14%;
 }
-.playlists .iframe-container {
-  height: 84%;
+
+
+.row.playlists {
+  margin: 1em auto 5em;
+}
+.playlists .spotify-container {
+  height: 500px;
+  width: 100%;
+}
+.playlists .spotify-container iframe {
+  width: 100%;
+}
+.playlists a {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.playlists a img {
+  width: 100%;
 }
 
-.playlists, .featured {
-  margin-top: 3em;
-  margin-bottom: 1.5em;
+.twitter, .featured {
+  margin-top: 4em;
+  margin-bottom: 2.5em;
 }
 
+.articles.container {
+  margin: 6em auto;
+}
+.articles .row {
+  margin: 0em 0 1em;
+}
 .card.article-card {
-  margin: 1em 0;
-  padding: 3em 0 0 3em;
+  margin: 2em 0;
+  padding: 3em 0 0 2em;
   /* z-index: -10; */
   border: 0px red solid;
 }
 .article-card-img-wrap {
   width: 100%;
-  height: 175px;
+  height: 225px;
   overflow: hidden;
 }
 .article-card-img-wrap img {
@@ -122,7 +145,7 @@ Author URI: balraj.cool
 .article-card .titles {
   position: absolute;
   left: 18%;
-  top: 205px;
+  top: 220px;
   background-color: #DDDDDD;
   width: 82%;
   height: 3em;
@@ -131,11 +154,16 @@ Author URI: balraj.cool
 }
 .article-card .excerpt {
   padding: 1rem;
-  padding-top: 2rem;
-  height: 175px;
+  padding-top: 30px;
+  height: 145px;
   overflow: hidden;
   background-color: #DDDDDD;
 }
+.article-card .excerpt p {
+  height: 97px;
+  overflow: hidden;
+  padding-right: 10em;
+  }
 .article-tag {
   position: absolute;
   height: 6em;
@@ -154,6 +182,17 @@ Author URI: balraj.cool
 
 .articles .col-10 {
   margin: auto;
+}
+
+.latest-tracks .block-title {
+  padding: 0;
+}
+
+.timeline-Header , .timeline-Footer {
+  display: none;
+}
+.timeline-Widget {
+  background-color: dddddd;
 }
 
 @media (max-width: 576px) {
@@ -255,5 +294,8 @@ Author URI: balraj.cool
   }
   .playlists .iframe-container {
     height: 86%;
-}
+  }
+  .latest-tracks .container.wider {
+    min-width: 1400px;
+  }
 }
