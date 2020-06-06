@@ -43,7 +43,8 @@ Author URI: balraj.cool
 }
 .track-card-img-wrap img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .track-card .titles {
   position: absolute;
@@ -98,10 +99,10 @@ Author URI: balraj.cool
 
 
 .row.playlists {
-  margin: 1em auto 5em;
+  margin: 1em auto 4em;
 }
 .playlists .spotify-container {
-  height: 500px;
+  height: 380px;
   width: 100%;
 }
 .playlists .spotify-container iframe {
@@ -140,7 +141,8 @@ Author URI: balraj.cool
 }
 .article-card-img-wrap img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .article-card .titles {
   position: absolute;
@@ -201,8 +203,8 @@ Author URI: balraj.cool
     margin-bottom: 1em;
   }
   .featured .img-wrapper {
-    height: 85px;
-    width: 85px;
+    height: 100%;
+    width: 25%;
     left: 10px;
   }
   .featured .block-title, .featured .title {
@@ -241,6 +243,9 @@ Author URI: balraj.cool
   .title {
     font-size: 19px;
   }
+  .article-card .excerpt p {
+    padding-right: 4em;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .featured {
@@ -254,15 +259,22 @@ Author URI: balraj.cool
   .featured .block-title, .featured .title {
     left: 24%;
   }
-  .playlists {
+  .twitter {
     margin-top: 1em;
     margin-bottom: 2em;
+  }
+  .twitter-timeline-wrapper {
+    margin: 0% -1px 0 14%;
   }
   .title, .block-title {
     font-size: 1.75rem;
   }
   .title {
     font-size: 23px;
+  }
+  .playlists .spotify-container {
+    height: 380px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -282,6 +294,17 @@ Author URI: balraj.cool
   .playlists .iframe-container {
     height: 83%;
   }
+  #twitter-widget-0 {
+    height: 344px !important;
+  }
+  .article-card .excerpt p {
+    padding-right: 6em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  #twitter-widget-0 {
+    height: 411px !important;
+  }
 }
 /* CUST BP XL XLG */
 @media (min-width: 1500px) {
@@ -299,3 +322,4 @@ Author URI: balraj.cool
     min-width: 1400px;
   }
 }
+

@@ -46,8 +46,11 @@
         <h1 class="block-title">
           FEED
         </h1>
+        <h1 class="title">
+          @paradoujin
+        </h1>
         <div class="twitter-timeline-wrapper">
-          <a class="twitter-timeline" data-height="488" data-theme="light" href="https://twitter.com/paradoujin?ref_src=twsrc%5Etfw">Tweets by paradoujin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-height="471" data-theme="light" href="https://twitter.com/paradoujin?ref_src=twsrc%5Etfw" data-chrome="nofooter transparent noheader">Tweets by paradoujin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
