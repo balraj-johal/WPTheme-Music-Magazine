@@ -14,9 +14,26 @@
       <?php while ( $queryLatestArticles->have_posts() ) : $queryLatestArticles->the_post(); ?>
         <div class="col-10 col-lg-6">
           <div class="card article-card">
-            <div class="article-tag">
-              PROFILE <!-- TODO: add the functionality for this -->
-            </div>
+            <?php
+              $posttags = get_the_tags();
+              $count=0;
+              $firstTag = null;
+              if ($posttags) {
+                foreach($posttags as $tag) {
+                  $count++;
+                  if (1 == $count) {
+                    $firstTag = $tag->name;
+                  }
+                }
+              }
+              if ($firstTag):
+            ?>
+              <a class="fix-a-white" href="tag/<?php echo $firstTag ?>">
+                <div class="article-tag">
+                  <?php echo $firstTag ?>
+                </div>
+              </a>
+            <?php endif; ?>
             <div class="contents">
               <a class="fix-a" href="<?php the_permalink(); ?>">
                 <div class="article-card-img-wrap">
