@@ -44,7 +44,7 @@
       <?php wp_reset_postdata(); ?>
     </div>
     <h1 class="block-title last">
-      SEE MORE >
+      <a href="category/article/" class="fix-a">SEE MORE ></a>
     </h1>
   </div>
 <?php else : ?>

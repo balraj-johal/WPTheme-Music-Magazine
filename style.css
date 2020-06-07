@@ -9,6 +9,7 @@ Author URI: balraj.cool
 
 @import "css/header.css";
 @import "css/front-page.css";
+@import "css/categories.css";
 @import "css/internal-page.css";
 @import "css/carousel-style.css";
 
@@ -40,6 +41,15 @@ h3 {
 }
 .fix-a:hover {
   color: black;
+  text-decoration: none;
+}
+.fix-a-white {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+.fix-a-white:hover {
+  color: white;
   text-decoration: none;
 }
 

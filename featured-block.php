@@ -45,7 +45,7 @@
       ?>
         <a href="https://www.instagram.com/<?php echo $insta; ?>">
           <img class="no-dragging-dickhead social-logo" src="<?php echo get_bloginfo('template_url') ?>/resources/images/insta.png" draggable="false"/>
-          @<?php echo $insta; ?>
+          <?php echo $insta; ?>
         </a>
       <?php endif; ?>
       <?php 
@@ -54,7 +54,7 @@
       ?>
         <a href="https://soundcloud.com/<?php echo $sc; ?>">
           <img class="no-dragging-dickhead social-logo" src="<?php echo get_bloginfo('template_url') ?>/resources/images/sc.png" draggable="false"/>
-          @<?php echo $sc; ?>
+          <?php echo $sc; ?>
         </a>
       <?php endif; ?>
     </div>

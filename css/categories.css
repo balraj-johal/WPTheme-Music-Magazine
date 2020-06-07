@@ -1,0 +1,12 @@
+/*
+Theme Name: Paradoujin Theme
+Theme URI: 
+Description: 
+Version: 0.1
+Author: Balraj Johal
+Author URI: balraj.cool
+*/
+
+.tracks-all .track-card, .tracks-all .track-card .titles {
+  background-color: #DDDDDD;
+}
