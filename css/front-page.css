@@ -283,6 +283,11 @@ Author URI: balraj.cool
     width: 100%;
   }
 }
+@media (min-width: 992px) {
+  .twitter .fix-a .block-title {
+    display: none;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
   .title, .block-title {
     font-size: 1.75rem;
@@ -329,3 +334,8 @@ Author URI: balraj.cool
   }
 }
 
+.twitter .fix-a .block-title {
+  position: absolute;
+  top: .5em;
+  right: 1em;
+}
