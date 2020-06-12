@@ -8,7 +8,7 @@
   ?>
   <?php while ( $queryLatestFeatured->have_posts() ) : $queryLatestFeatured->the_post(); ?>
     <h1 class="block-title">
-      FEATURED TRACK
+      FEATURED
     </h1>
     <h1 class="title">
       <?php the_title(); ?>

@@ -92,6 +92,7 @@ Author URI: balraj.cool
 }
 .block-title {
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .featured .iframe-container {
   margin: 0% 0 0 14%;

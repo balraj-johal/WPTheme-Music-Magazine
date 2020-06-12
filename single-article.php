@@ -1,6 +1,6 @@
 <div class="content article">
 
-  <div class="img-top-wrap no-dragging-dickhead">
+  <div class="img-top-wrap container-override no-dragging-dickhead">
     <?php 
       $image = get_field('image'); // TODO change to correct field
       $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="container-o">
+  <div class="container-override">
     <?php while(have_posts()) : the_post(); ?>
       <div class="details">
         <span class="post-date"><?php the_time(get_option('date_format')); ?></span> - <span class="author"><?php the_author() ?></span><br />
