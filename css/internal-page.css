@@ -19,6 +19,7 @@ Author URI: balraj.cool
 .img-top-wrap img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)); */
 }
@@ -110,7 +111,7 @@ Author URI: balraj.cool
   .container-override { 
     max-width: 960px;
   }
-  .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
+  .img-top-wrap, .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
     height: 540px;
   }
 }
@@ -129,7 +130,7 @@ Author URI: balraj.cool
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
-  .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
+  .img-top-wrap, .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
     height: 640px;
   }
 }
@@ -137,7 +138,7 @@ Author URI: balraj.cool
   .container-override { 
     max-width: 1300px;
   }
-  .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
+  .img-top-wrap, .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
     height: 730px;
   }
 }
