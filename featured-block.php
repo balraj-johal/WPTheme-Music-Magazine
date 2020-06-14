@@ -16,7 +16,7 @@
 
     <div class="img-wrapper">
       <?php 
-        $image = get_field('artist_photo');
+        $image = get_field('corner_image');
         $size = 'medium'; // (thumbnail, medium, large, full or custom size)
         if( $image ) {
             echo wp_get_attachment_image( $image, $size );
@@ -24,9 +24,9 @@
       ?>
     </div>
 
-    <?php $video_URL = get_field('video_url') ?>
+    <?php $video_URL = get_field('video_id') ?>
     <div class="iframe-container">
-      <iframe src="<?php echo $video_URL ?>" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>" allowfullscreen></iframe>
     </div>
     
     <div class="social-links">

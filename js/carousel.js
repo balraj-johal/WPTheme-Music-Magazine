@@ -20,9 +20,9 @@ jQuery(document).ready(function() {
     }
   });
 
-  jQuery('#myCarousel').carousel({
-    interval: 1000
-  });
+  // jQuery('#myCarousel').carousel({
+  //   interval: 1000
+  // });
 
 });
 
