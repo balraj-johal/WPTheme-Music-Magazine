@@ -1,6 +1,6 @@
 <?php
   $queryLatestTracks = new WP_Query( array(
-    'category_name' => 'track',
+    'post_type' => 'track',
     'posts_per_page' => 3,
   )); 
 ?>

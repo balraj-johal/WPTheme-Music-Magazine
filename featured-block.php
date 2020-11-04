@@ -26,7 +26,7 @@
 
     <?php $video_URL = get_field('video_id') ?>
     <div class="iframe-container">
-      <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?php echo $video_URL ?>" allowfullscreen></iframe>
     </div>
     
     <div class="social-links">
@@ -61,5 +61,4 @@
 
   <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>
-
 </div>

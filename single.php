@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+eh
   <?php 
     if ( in_category( 'article' ) ) {
       get_template_part('single-article');

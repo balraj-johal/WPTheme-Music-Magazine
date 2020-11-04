@@ -2,7 +2,7 @@
   <a class="fix-a" href="<?php the_permalink(); ?>">
     <div class="track-card-img-wrap">
       <?php 
-        $image = get_field('artist_info');
+        $image = get_field('track_image');
         $size = 'full'; // (thumbnail, medium, large, full or custom size)
         if( $image ) {
           //echo wp_get_attachment_image( $image, $size );

@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <div class="content track-page">
   <div class="img-top-wrap no-dragging-dickhead">
     
@@ -66,4 +65,3 @@
     <?php endif; ?>
   </div>
 </div>
-<?php get_footer(); ?>
