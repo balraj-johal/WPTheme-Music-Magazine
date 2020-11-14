@@ -1,7 +1,7 @@
 <?php
   $queryLatestTracks = new WP_Query( array(
     'post_type' => 'track',
-    'posts_per_page' => 3,
+    'posts_per_page' => 9,
   )); 
 ?>
 <?php if ( $queryLatestTracks->have_posts() ) : ?>

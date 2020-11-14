@@ -24,7 +24,7 @@ wp_enqueue_script( 'carousel', get_template_directory_uri().'/js/carousel.js', a
 
 //reduce exceprt length - in words
 add_filter( 'excerpt_length', function($length) {
-  return 30;
+  return 28;
 } );
 
 ?>

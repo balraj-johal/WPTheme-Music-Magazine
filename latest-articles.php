@@ -1,6 +1,6 @@
 <?php
   $queryLatestArticles = new WP_Query( array(
-    'category_name' => 'article',
+    'post_type' => 'article',
     'posts_per_page' => 8,
   )); 
 ?>
