@@ -2,7 +2,7 @@
 
   <?php
     $queryLatestFeatured = new WP_Query( array(
-      'category_name' => 'featured',
+      'post_type' => 'featured',
       'posts_per_page' => 1,
     )); 
   ?>

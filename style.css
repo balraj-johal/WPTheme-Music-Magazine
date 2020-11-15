@@ -83,7 +83,11 @@ h3 {
   min-height: 1080px;
 }
 
+/* test styles */
 .shift-up {
   color: red;
   top: -10.5em !important;
+}
+.error404 {
+  background-color: red;
 }

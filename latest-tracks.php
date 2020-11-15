@@ -34,7 +34,7 @@
         <?php wp_reset_postdata(); ?>
       </div>
       <h1 class="block-title">
-        <a href="category/track/" class="fix-a-white">SEE MORE ></a>
+        <a href="track/" class="fix-a-white">SEE MORE ></a>
       </h1>
     </div>
   </div>

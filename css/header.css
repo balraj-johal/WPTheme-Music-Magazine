@@ -31,9 +31,12 @@ Author URI: balraj.cool
   padding: 13px 13px 10px 20px;
   width: 315px;
   margin: 0;
+  position: relative;
+  z-index: 100;
 }
 .site-title a {
   color: white;
+  padding: 0 10px;
 }
 .site-title a:hover {
   color: white;
@@ -91,7 +94,7 @@ Author URI: balraj.cool
 @media (min-width: 768px) {
   .site-title {    
     font-size: 48px;
-    padding: 13px 13px 10px 27px;
+    padding: 13px 13px 10px 17px;
   }
   .header-nav {
     height: 80px;
@@ -100,7 +103,7 @@ Author URI: balraj.cool
     font-size: 22px;
   }
   .page_item, .menu-item {
-    padding: 23px 15px;
+    padding: 25px 15px;
   }
 }
 
