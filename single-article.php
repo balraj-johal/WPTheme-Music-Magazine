@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <div class="content article">
 
   <div class="img-top-wrap container-override no-dragging-dickhead">
@@ -25,3 +26,4 @@
   </div>
 
 </div>
+<?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="content container">
-  <h3>This is the core page (index.php):</h3>
+  <!-- <h3>This is the core page (index.php):</h3> -->
 
   <?php while(have_posts()) : the_post(); ?>
     <h1><?php the_title(); ?></h1>
