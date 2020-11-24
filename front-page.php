@@ -18,10 +18,10 @@
           @paradoujin
         </h1>
         <a class="fix-a" data-toggle="collapse" href="#twitterCollapse" role="button" aria-expanded="false" aria-controls="twitterCollapse">
-          <h1 class="block-title">SHOW ˅</h1>
+          <h1 class="block-title" style="text-transform: lowercase;">show ˅</h1>
         </a>
         <div class="twitter-timeline-wrapper">
-          <div class="collapse show" id="twitterCollapse">
+          <div class="collapse" id="twitterCollapse">
             <a class="twitter-timeline" data-height="471" data-theme="light" href="https://twitter.com/paradoujin?ref_src=twsrc%5Etfw" data-chrome="nofooter transparent noheader">Tweets by paradoujin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>

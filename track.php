@@ -52,7 +52,7 @@
           <h1 class="block-title">other shit you might like</h1>
           <div class="row tracks-all content">
             <?php while ( $related->have_posts() ) : $related->the_post(); ?>
-              <div class="col-6 col-lg-4">
+              <div class="col-11 col-md-6 col-lg-4">
                 <?php get_template_part('track-card'); ?>
               </div>
             <?php endwhile; ?>

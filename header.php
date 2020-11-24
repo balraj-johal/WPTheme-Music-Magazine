@@ -18,8 +18,9 @@
       <![endif]--> 
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Share+Tech+Mono&display=swap&family=Share+Tech&display=swap&family=Archivo&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" type="text/css" href="css/carousel-style.css"/>
-      <link rel="stylesheet" type="text/css" href="css/carousel-style.css"/>
-      
+      <link href='https://css.gg/menu.css' rel='stylesheet'>
+
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

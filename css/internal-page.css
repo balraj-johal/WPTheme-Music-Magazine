@@ -46,11 +46,41 @@ Author URI: balraj.cool
   margin: 4em 0;
 }
 
+.page .title {
+  font-size: 2.5em;
+  margin: 0.75em 0 0.25em;
+}
 
+
+.playlists-all .col-12, .playlists-all .col-md-6 {
+  padding: 0;
+}
+.playlist-card {
+  background-color: black;
+  color: red;
+}
+.playlist-img-wrap {
+  width: 100%;
+  height: auto;
+}
+.playlist-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 576px) {
-  .container-override { 
-    /* max-width: 960px; */
+  .category-all .col-11 {
+    margin: auto;
+  }
+  .category-all .row {
+    margin: 0em 0 1em;
+  }
+  .tag-all, .category-all {
+    margin: 2em auto 2.5em !important;
+  }
+  .category-all .col-12, .tag-all .col-12 {
+    margin: 1em 0;
   }
   .container-override p, .container-override .details, .container-override .block-title {
     /* max-width: 540px; */
@@ -60,24 +90,59 @@ Author URI: balraj.cool
     margin-right: auto;
     margin-left: auto;
   }
+
+  .page .title, .img-top-title h1 {
+    font-size: 2em;
+  }
+
+  /* ARTICLE STYLES */
+  .img-top-wrap {
+    height: 235px;
+    margin-bottom: 1.5em;
+  }
+  .img-top-title {
+    top: -3em;
+    left: 3%;
+    width: 90%;
+  }
+  .details {
+    font-size: 14px;
+  }
+  .article figure {
+    margin: 2em 0;
+  }
+  .article .content {
+    font-size: 14px;
+  }
+  .article .content p, .page .content p, .track-page p {
+    font-size: 13px;
+  }
+  .wp-block-image img {
+    height: auto;
+  }
+  .wp-block-image figcaption {
+    font-size: 11px;
+    margin-left: 2%;
+  }
+
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .container-override { 
-    /* max-width: 960px; */
-  }
   .container-override p, .container-override .details, .container-override .block-title {
     max-width: 540px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 40px;
+    padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
   }
+
+  .playlists-all .col-12:nth-child(3) {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .container-override { 
-    /* max-width: 960px; */
-  }
   .container-override p, .container-override .details, .container-override .block-title {
     max-width: 720px;
     width: 100%;
@@ -87,6 +152,11 @@ Author URI: balraj.cool
     margin-left: auto;
   }
   
+  .playlists-all .col-12:nth-child(3) {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100%;
+  }
 }
 @media (min-width: 992px) {
   .container-override {
@@ -140,4 +210,21 @@ Author URI: balraj.cool
   .img-top-wrap, .track-page .img-top-wrap, .img-top-wrap .iframe-container iframe {
     height: 730px;
   }
+}
+
+.wpcf7-form-control {
+  width: 100%;
+}
+/* 
+.single-track .container-override .row {
+  padding: 0 50px;
+} */
+.other-shit {
+  /* margin-top: 3em; */
+  margin-bottom: 3em;
+  position: relative;
+  padding: 5em 0;
+}
+.track-card .excerpt p {
+  padding: 0;
 }

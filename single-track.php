@@ -29,7 +29,9 @@
       <br />
       <br />
     <?php endwhile; ?>
-    
+  </div>
+
+  <div class="">
     <!-- 
       Tracks related by tags, not including current post
       sorted randomly
@@ -39,7 +41,7 @@
       //that stopped it from being quieried
       $term_list = join(',', array_map(function($t) { return $t->name; }, get_the_tags()));
       $related_args = array(
-        'category_name' => 'track',
+        'post_type' => 'track',
         'posts_per_page' => 4,
         'post_status' => 'publish',
         'post__not_in' => array(get_the_ID()),
@@ -48,18 +50,35 @@
       );
       $related = new WP_Query( $related_args );
       if ( $related->have_posts() ) : ?>
-
-        <div class="container-override">
-          <h1 class="block-title">other shit you might like</h1>
-          <div class="row tracks-all content">
-            <?php while ( $related->have_posts() ) : $related->the_post(); ?>
-              <div class="col-6 col-lg-4">
-                <?php get_template_part('track-card'); ?>
+        <div class="other-shit">
+          <div class="bg"></div>
+          <div class="container">
+            <h1 class="block-title">other shit you might like</h1>
+            
+            <div class="row">
+              <div class="carousel slide w-100" data-ride="carousel" id="myCarousel">
+                  <div class="carousel-inner w-100" role="listbox" id="mci">
+                    <?php while ( $related->have_posts() ) : $related->the_post(); ?>
+                      <div class="carousel-item">
+                        <div class="col-11 col-md-6 col-lg-4">     
+                          <?php get_template_part('track-card'); ?>
+                        </div>
+                      </div>
+                    <?php endwhile; ?>
+                  </div>
+                <a class="carousel-control-prev w-auto" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
               </div>
-            <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+            </div>
           </div>
-        </div>
-
+      </div>
       <?php wp_reset_postdata(); ?>
     <?php else : ?>
       <p>No tracks!!</p>

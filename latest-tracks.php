@@ -16,7 +16,7 @@
             <div class="carousel-inner w-100" role="listbox" id="mci">
               <?php while ( $queryLatestTracks->have_posts() ) : $queryLatestTracks->the_post(); ?>
                 <div class="carousel-item">
-                  <div class="col-6 col-lg-4">     
+                  <div class="col-11 col-md-6 col-lg-4">     
                     <?php get_template_part('track-card'); ?>
                   </div>
                 </div>

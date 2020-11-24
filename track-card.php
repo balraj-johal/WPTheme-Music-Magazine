@@ -16,8 +16,8 @@
       <?php the_field('track_name'); ?> - 
       <?php the_field('artist'); ?>
     </h2>
+    <div class="excerpt">
+      <?php the_excerpt(); ?>
+    </div>
   </a>
-  <div class="excerpt">
-    <?php the_excerpt(); ?>
-  </div>
 </div>

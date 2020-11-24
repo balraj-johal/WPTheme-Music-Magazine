@@ -28,11 +28,12 @@ Author URI: balraj.cool
 }
 .site-title {    
   font-size: 32px;
-  padding: 13px 13px 10px 20px;
+  /* padding: 13px 13px 10px 20px;  */
+  padding: 13px 13px 10px 3px;
   width: 315px;
   margin: 0;
   position: relative;
-  z-index: 100;
+  z-index: 5;
 }
 .site-title a {
   color: white;
@@ -69,10 +70,10 @@ Author URI: balraj.cool
 
 /* UNDER SM */
 @media (max-width: 576px) {
-  .bg-dark-on-collapse {
+  /* .bg-dark-on-collapse {
     background-color: #111112;
     border-radius: 3px;
-  }
+  } */
 }
 @media (min-width: 576px) {
   .navbar-override {
@@ -114,10 +115,22 @@ Author URI: balraj.cool
   right: 0;
   margin: 0px 0px;
   padding: 11px 9px;
+  z-index: 10;
 }
 .navbar-dark .navbar-toggler {
   border-color: transparent;
+  padding: .25rem .5rem;
 }
 .navbar-toggler:focus {
   outline: 0px dotted;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-override.bg-transition {
+  background-color: black;
+}
+.navbar-override {
+  transition: background-color 1s;
 }

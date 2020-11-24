@@ -26,7 +26,7 @@
 
     <?php $video_URL = get_field('video_id') ?>
     <div class="iframe-container">
-      <iframe src="https://www.youtube.com/embed/<?php echo $video_URL ?>" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?php echo $video_URL ?>?wmode=opaque" allowfullscreen></iframe>
     </div>
     
     <div class="social-links">
@@ -34,7 +34,7 @@
         $twitter = get_field('twitter_@'); 
         if ($twitter):
       ?>
-        <a href="https://www.twitter.com/<?php echo $twitter; ?>">
+        <a target="_blank" href="https://www.twitter.com/<?php echo $twitter; ?>">
           <img class="no-dragging-dickhead social-logo" src="<?php echo get_bloginfo('template_url') ?>/resources/images/twitter.png" draggable="false"/>
           @<?php echo $twitter; ?>
         </a>
@@ -43,7 +43,7 @@
         $insta = get_field('insta_name'); 
         if ($insta):
       ?>
-        <a href="https://www.instagram.com/<?php echo $insta; ?>">
+        <a target="_blank" href="https://www.instagram.com/<?php echo $insta; ?>">
           <img class="no-dragging-dickhead social-logo" src="<?php echo get_bloginfo('template_url') ?>/resources/images/insta.png" draggable="false"/>
           <?php echo $insta; ?>
         </a>
@@ -52,7 +52,7 @@
         $sc = get_field('soundcloud_name');
         if ($sc):
       ?>
-        <a href="https://soundcloud.com/<?php echo $sc; ?>">
+        <a target="_blank" href="https://soundcloud.com/<?php echo $sc; ?>">
           <img class="no-dragging-dickhead social-logo" src="<?php echo get_bloginfo('template_url') ?>/resources/images/sc.png" draggable="false"/>
           <?php echo $sc; ?>
         </a>

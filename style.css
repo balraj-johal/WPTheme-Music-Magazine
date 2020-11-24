@@ -67,6 +67,7 @@ h3 {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: -100;
 }
 
 .no-dragging-dickhead, .no-dragging-dickhead img {

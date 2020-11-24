@@ -12,7 +12,7 @@
     </h1>
     <div class="row">
       <?php while ( $queryLatestArticles->have_posts() ) : $queryLatestArticles->the_post(); ?>
-        <div class="col-10 col-lg-6">
+        <div class="col-12 col-md-10 col-lg-6 fade-in-section">
           <?php get_template_part('article-card'); ?>
         </div>  
       <?php endwhile; ?>
