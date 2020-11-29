@@ -34,6 +34,7 @@ Author URI: balraj.cool
   border: 0px solid rgba(0,0,0,.125);
   border-radius: 0rem;
   height: 450px;
+  max-width: 400px;
   margin: 2em auto;
 }
 .track-card-img-wrap {
@@ -127,7 +128,7 @@ Author URI: balraj.cool
   margin: 4em auto;
 }
 .articles .row {
-  margin: 0em 0 2.5em;
+  margin: 0em 0 3.5em;
 }
 .card.article-card {
   /* margin: 2em 0; */
@@ -199,11 +200,11 @@ Author URI: balraj.cool
 }
 
 .social-links {
-  margin: 10px;
+  margin: 10px 0;
   float: right;
 }
 .social-links a {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .social-logo {
   height: 16px;
@@ -253,8 +254,8 @@ Author URI: balraj.cool
     margin: 0;
   }
   .track-card {
-    /* height: 435px; */
     height: 410px;
+    max-width: 340px;
   }
   .track-card .excerpt {
     font-size: 14px;
@@ -349,11 +350,12 @@ Author URI: balraj.cool
     width: 150px;
   }
   .featured .block-title, .featured .title {
-    left: 24%;
+    left: 21.35%;
   }
   .twitter {
     margin-top: 1em;
     margin-bottom: 0em;
+    padding-left: 0;
   }
   .twitter-timeline-wrapper {
     margin: 0% -1px 0 14%;
@@ -369,7 +371,14 @@ Author URI: balraj.cool
     width: 100%;
   }
   .articles .col-md-10 {
+    /* margin: 0 4%; */
     margin: auto;
+  }
+  .article-card .excerpt {
+    padding-top: 26px;
+  }
+  .article-card .excerpt p {
+    padding-right: 8em;
   }
 
 }
@@ -398,13 +407,32 @@ Author URI: balraj.cool
   #twitter-widget-0 {
     height: 344px !important;
   }
+
   .article-card .excerpt p {
     padding-right: 6em;
+  }
+
+  .track-card .excerpt {
+    padding: 1.1rem 1.5rem 0 1rem;
+    font-size: 0.85rem;
+  }
+  .track-card .titles {
+    font-size: 20px;
+  }
+  .article-card .excerpt {
+    font-size: 0.95rem;
+  }
+
+  .see-more {
+    margin-right: -20px !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   #twitter-widget-0 {
     height: 411px !important;
+  }
+  .block-title.last {
+    font-size: 1.75rem;
   }
 }
 /* CUST BP XL XLG */
@@ -422,12 +450,15 @@ Author URI: balraj.cool
   .latest-tracks .container.wider {
     min-width: 1400px;
   }
+  .block-title.last {
+    font-size: 1.75rem;
+  }
 }
 
 .twitter .fix-a .block-title {
   position: absolute;
   top: .5em;
-  right: 1em;
+  right: .5em;
 }
 
 /* test */

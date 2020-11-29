@@ -27,51 +27,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row playlists">
-      <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        <img class="playlist-img" src="<?php echo get_bloginfo('template_url') ?>/resources/images/rap-royalty.png" draggable="false"/>
-      </a>
-      <div class="spotify-container collapse" id="collapseExample">
-        <iframe src="https://open.spotify.com/embed/playlist/1a2lGzQxf5AdipnKmPpb9I" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-    </div> -->
-
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <img class="playlist-img" src="<?php echo get_bloginfo('template_url') ?>/resources/images/rap-royalty.png" draggable="false"/>
-          </a>
-          <div class="spotify-container collapse" id="collapseExample">
-            <iframe src="https://open.spotify.com/embed/playlist/1a2lGzQxf5AdipnKmPpb9I" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <img class="playlist-img" src="<?php echo get_bloginfo('template_url') ?>/resources/images/rap-royalty.png" draggable="false"/>
-          </a>
-          <div class="spotify-container collapse" id="collapseExample">
-            <iframe src="https://open.spotify.com/embed/playlist/1a2lGzQxf5AdipnKmPpb9I" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <img class="playlist-img" src="<?php echo get_bloginfo('template_url') ?>/resources/images/rap-royalty.png" draggable="false"/>
-          </a>
-          <div class="spotify-container collapse" id="collapseExample">
-            <iframe src="https://open.spotify.com/embed/playlist/1a2lGzQxf5AdipnKmPpb9I" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> -->
   </div>
 
   <?php get_template_part('latest-tracks'); ?>

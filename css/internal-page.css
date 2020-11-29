@@ -125,6 +125,20 @@ Author URI: balraj.cool
     margin-left: 2%;
   }
 
+
+@media (max-width: 576px) {
+  .other-shit {
+    padding: 1em 0;
+    margin-top: 1em;
+  }
+  .latest-tracks .block-title, .other-shit .block-title {
+    padding: 1em 0 0 15px;
+  }
+  .track-card {
+    max-width: 340px;
+    }
+}
+
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .container-override p, .container-override .details, .container-override .block-title {
@@ -140,6 +154,10 @@ Author URI: balraj.cool
     max-width: 100% !important;
     width: 100% !important;
     flex: 0 0 100%;
+  }
+
+  .carousel-inner .carousel-item > div:first-child {
+    margin: 1em auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -157,6 +175,7 @@ Author URI: balraj.cool
     width: 100% !important;
     flex: 0 0 100%;
   }
+
 }
 @media (min-width: 992px) {
   .container-override {
@@ -220,11 +239,17 @@ Author URI: balraj.cool
   padding: 0 50px;
 } */
 .other-shit {
-  /* margin-top: 3em; */
+  margin-top: 3em;
   margin-bottom: 3em;
   position: relative;
-  padding: 5em 0;
+  padding: 3em 0;
 }
 .track-card .excerpt p {
   padding: 0;
+}
+
+.wp-block-image figcaption {
+  margin-top: .5em;
+  margin-bottom: 1em;
+  padding-left: 1em;
 }

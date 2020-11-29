@@ -32,7 +32,6 @@ h3 {
   font-family: 'Share Tech', monospace;
 }
 .block-title.last {
-  font-size: 1.75rem;
   text-align: right;
 }
 .fix-a {
@@ -67,7 +66,7 @@ h3 {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -100;
+  /* z-index: -100; */
 }
 
 .no-dragging-dickhead, .no-dragging-dickhead img {
@@ -86,7 +85,6 @@ h3 {
 
 /* test styles */
 .shift-up {
-  color: red;
   top: -10.5em !important;
 }
 .error404 {
