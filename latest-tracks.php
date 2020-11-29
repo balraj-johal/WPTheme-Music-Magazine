@@ -33,7 +33,7 @@
         </div>
         <?php wp_reset_postdata(); ?>
       </div>
-      <h1 class="block-title">
+      <h1 class="block-title see-more">
         <a href="track/" class="fix-a-white">SEE MORE ></a>
       </h1>
     </div>

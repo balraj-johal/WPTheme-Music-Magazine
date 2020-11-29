@@ -25,9 +25,6 @@
         <br />
         <?php the_content(); ?><br />
       </div>
-      <br />
-      <br />
-      <br />
     <?php endwhile; ?>
   </div>
 

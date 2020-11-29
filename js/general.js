@@ -1,8 +1,8 @@
 window.onload = function() {
 
 // shift article title up and down depending
-    if ($(window).width() > 992) {
-        if ($('.article .img-top-title').height() > 100) {
+    if ($(window).width() > 768) {
+        if ($('.article .img-top-title').height() > 78) {
             $('.article .img-top-title').addClass('shift-up');
             $('.article .img-top-title').css('top', '-10.5em');
         }

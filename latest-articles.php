@@ -19,7 +19,7 @@
       <?php wp_reset_postdata(); ?>
     </div>
     <h1 class="block-title last">
-      <a href="article/" class="fix-a">SEE MORE ></a>
+      <a href="article/" class="fix-a see-more">SEE MORE ></a>
     </h1>
   </div>
 <?php else : ?>
