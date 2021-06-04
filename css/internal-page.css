@@ -6,7 +6,12 @@ Version: 0.1
 Author: Balraj Johal
 Author URI: balraj.cool
 */
-
+.post-type-archive-playlist .content.page {
+  margin: 0 !important;
+}
+.content.page {
+  margin: 50px 0;
+}
 .track-page .img-top-wrap {
   height: auto;
 }
@@ -92,7 +97,7 @@ Author URI: balraj.cool
   }
 
   .page .title, .img-top-title h1 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   /* ARTICLE STYLES */
@@ -131,7 +136,7 @@ Author URI: balraj.cool
     padding: 1em 0;
     margin-top: 1em;
   }
-  .latest-tracks .block-title, .other-shit .block-title {
+  .other-shit .block-title {
     padding: 1em 0 0 15px;
   }
   .track-card {

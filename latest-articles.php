@@ -23,5 +23,7 @@
     </h1>
   </div>
 <?php else : ?>
-  <p>No articl;es!!</p>
+<div class="container">
+  <p>Watch this space...</p>
+</div>
 <?php endif; ?>

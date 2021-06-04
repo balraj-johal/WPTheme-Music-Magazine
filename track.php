@@ -3,7 +3,7 @@
     
     <?php $video_ID = get_field('video_id') ?>
     <div class="iframe-container container-override">
-      <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>?wmode=opaque&modestbranding=1" allowfullscreen></iframe>
     </div>
 
     <!-- <div class="img-top-title no-dragging-dickhead">

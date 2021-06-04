@@ -90,3 +90,7 @@ h3 {
 .error404 {
   background-color: red;
 }
+
+.home .footer, .page-id-8 .footer {
+  visibility: visible !important;
+}

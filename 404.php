@@ -19,7 +19,7 @@
     ?>
           <p>id: <?php $video_ID ?></p>
           <div class="iframe-container container-override">
-              <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/<?php echo $video_ID ?>?wmode=opaque&modestbranding=1" allowfullscreen></iframe>
           </div>
       <?php wp_reset_postdata(); ?>
     <?php else : ?>

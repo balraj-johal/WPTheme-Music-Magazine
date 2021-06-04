@@ -26,7 +26,7 @@
 
     <?php $video_URL = get_field('video_id') ?>
     <div class="iframe-container">
-      <iframe src="https://www.youtube.com/embed/<?php echo $video_URL ?>?wmode=opaque" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?php echo $video_URL ?>?wmode=opaque&modestbranding=1" allowfullscreen></iframe>
     </div>
     
     <div class="social-links">
