@@ -7,6 +7,8 @@ Author: Balraj Johal
 Author URI: balraj.cool
 */
 
+
+
 .latest-tracks {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -217,17 +219,23 @@ Author URI: balraj.cool
     font-size: 14px;
   }
   .featured {    
-    margin-top: 1.575em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 1.25em;
   }
   .featured .img-wrapper {
     height: 100%;
     width: 25%;
-    left: 10px;
+    left: 15px;
     z-index: -200;
   }
   .featured .block-title, .featured .title {
     left: 30%;
+  }
+  .featured .iframe-container {
+    margin-top: -1.5%;
+  }
+  .social-links {
+    margin-top: 2px;
   }
   .social-links a {
     font-size: 12px;
@@ -243,15 +251,19 @@ Author URI: balraj.cool
   }
   .twitter {
     margin-top: 0em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
+  }
+  .twitter .fix-a .block-title {
+    right: 15px !important;
   }
   .latest-tracks {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    padding: 2em 0;
+    margin-top: 1.35em;
+    margin-bottom: 2.5em;
+    padding: 2.75em 0;
   }
   .latest-tracks .block-title, .articles .block-title {
     margin: 0;
+    font-size: 1.25rem !important;
   }
   .track-card {
     height: 410px;
@@ -274,6 +286,9 @@ Author URI: balraj.cool
   }
   .articles.container {
     margin: 0 auto;
+  }
+  .articles .row {
+    margin: 0 0 1em;
   }
   .articles .col-12 {
     margin: 1em 0;
@@ -313,16 +328,29 @@ Author URI: balraj.cool
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .featured {
+  /* .featured {
     margin-top: 2em;
     margin-bottom: 1em;
+  } */
+  .twitter {
+    padding: 0;
+  }
+  .twitter, .featured {
+    margin: 0;
+  }
+  .featured {
+    margin-top: 3em;
   }
   .featured .img-wrapper {
     height: 125px;
     width: 125px;
   }
   .featured .block-title, .featured .title {
-    left: 21.35%;
+    left: 24.35%;
+  }
+  .latest-tracks {
+    margin-top: 2.5em;
+    padding: 4em 0;
   }
   .playlists {
     margin-top: 1em;
