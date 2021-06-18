@@ -56,7 +56,9 @@ Author URI: balraj.cool
   margin: 0.75em 0 0.25em;
 }
 
-
+.playlists-all {
+  margin: 0;
+}
 .playlists-all .col-12, .playlists-all .col-md-6 {
   padding: 0;
 }
@@ -155,11 +157,11 @@ Author URI: balraj.cool
     margin-left: auto;
   }
 
-  .playlists-all .col-12:nth-child(3) {
+  /* .playlists-all .col-12:nth-child(3) {
     max-width: 100% !important;
     width: 100% !important;
     flex: 0 0 100%;
-  }
+  } */
 
   .carousel-inner .carousel-item > div:first-child {
     margin: 1em auto;
@@ -175,11 +177,11 @@ Author URI: balraj.cool
     margin-left: auto;
   }
   
-  .playlists-all .col-12:nth-child(3) {
+  /* .playlists-all .col-12:nth-child(3) {
     max-width: 100% !important;
     width: 100% !important;
     flex: 0 0 100%;
-  }
+  } */
 
 }
 @media (min-width: 992px) {

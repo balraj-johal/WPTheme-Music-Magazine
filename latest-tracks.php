@@ -5,8 +5,11 @@
   )); 
 ?>
 <?php if ( $queryLatestTracks->have_posts() ) : ?>
-  <div class="latest-tracks">
+  <div class="latest-tracks" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/resources/images/noise1.gif);">
     <div class="bg"></div>
+    <video class="parallaxed-vid" autoplay muted loop nocontrols>
+      <source src="<?php echo get_stylesheet_directory_uri(); ?>/resources/videos/noise.mp4" type="video/mp4">
+    </video>
     <div class="container wider">
       <h1 class="block-title">
         NEW MUSIC
